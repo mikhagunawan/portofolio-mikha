@@ -1,8 +1,87 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 449.7804%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAHAhAFror8/3sFLB9MU7cO8tThBFz742w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHAhAFror8&#x2F;3sFLB9MU7cO8tThBFz742w&#x2F;view?utm_content=DAHAhAFror8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Portfolio Mikha Gunawan Andy W.</a> oleh Mikha Business
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Mikha Gunawan Andy W.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    /* Container iframe Canva */
+    .canva-embed {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 150%; /* default ratio */
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+      margin: 1.6em 0 0.9em 0;
+    }
+
+    .canva-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Responsif HP */
+    @media (max-width: 600px) {
+      .canva-embed {
+        padding-top: 200%; /* lebih tinggi agar pas di HP */
+      }
+    }
+
+    /* Responsif tablet */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .canva-embed {
+        padding-top: 170%; /* sedikit lebih tinggi untuk tablet */
+      }
+    }
+
+    /* Link alternatif */
+    .canva-link {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Portfolio Mikha Gunawan Andy W.</h1>
+
+  <div class="canva-embed">
+    <iframe 
+      loading="lazy"
+      src="https://www.canva.com/design/DAHAhAFror8/3sFLB9MU7cO8tThBFz742w/view?embed"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div style="text-align: center;">
+    <a class="canva-link" 
+       href="https://www.canva.com/design/DAHAhAFror8/3sFLB9MU7cO8tThBFz742w/view?utm_content=DAHAhAFror8&utm_campaign=designshare&utm_medium=embeds&utm_source=link" 
+       target="_blank" rel="noopener">
+      Lihat portfolio di Canva
+    </a>
+  </div>
+
+</body>
+</html>
