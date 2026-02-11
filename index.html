@@ -1,8 +1,51 @@
-<div style="position: relative; width: 100%; height: 0; padding-top: 449.7804%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAHAhAFror8/3sFLB9MU7cO8tThBFz742w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
+<!-- Embed Canva Responsif + Animasi Fade-in -->
+<div class="canva-embed animated">
+  <iframe loading="lazy"
+          src="https://www.canva.com/design/DAHAhAFror8/3sFLB9MU7cO8tThBFz742w/view?embed"
+          allowfullscreen
+          style="border:0;"></iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHAhAFror8&#x2F;3sFLB9MU7cO8tThBFz742w&#x2F;view?utm_content=DAHAhAFror8&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Portfolio Mikha Gunawan Andy W.</a> oleh Mikha Business
+
+<style>
+/* Container responsif */
+.canva-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* rasio 16:9, bisa disesuaikan */
+  box-shadow: 0 2px 8px rgba(63,69,81,0.16);
+  margin: 1.6em 0 0.9em 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Animasi Fade-in saat halaman dimuat */
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s; /* delay optional */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Iframe full container */
+.canva-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) {
+  .canva-embed {
+    padding-top: 80%; /* tinggi lebih pas di HP */
+  }
+}
+</style>
